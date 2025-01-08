@@ -5,7 +5,7 @@ pydantic
 passlib
 python-dotenv
 textblob
-openai==0.28
+openai
 pymongo
 motor
 pydantic[email]
