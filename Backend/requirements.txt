@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+passlib
+python-dotenv
+textblob
+openai==0.28
+pymongo
+motor
+pydantic[email]
+

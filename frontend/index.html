@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>AI-Powered Virtual Therapist</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>AI-Powered Virtual Therapist</h1>
+        
+        <!-- Always Show 3D Sphere Animation -->
+        <div id="waveform-container" class="waveform-container"></div>
+        
+    </div>
+
+    <div class="container">
+
+        <section class="emotion-input-container" id="emotionInputContainer">
+            <h3>Share your thoughts or feelings:</h3>
+            <textarea id="userInput" placeholder="Type your thoughts here..." rows="4" cols="50"></textarea>
+            
+            <div class="cta-container">
+                <button onclick="startTherapySession()" aria-label="Start therapy session">Start Therapy Session</button>
+                <button id="recordButton" aria-label="Record your thoughts">
+                    <i class="fas fa-microphone"></i> Record your thoughts
+                </button>
+            </div>
+        </section>
+
+        <section id="emotion-response" class="response">
+            <h3>Detected Emotion:</h3>
+            <p id="emotion-text">Emotion will be displayed here...</p>
+        </section>
+
+        <section id="chat-response" class="response">
+            <h3>AI Response:</h3>
+            <p id="chat-text">AI response will be displayed here...</p>
+        </section>
+
+        <div id="loading" class="loading-spinner" style="display:none;">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
